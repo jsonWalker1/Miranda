@@ -1,0 +1,88 @@
+/*product */
+.nav-product {
+    ul {
+        margin: 20rem 2rem 7rem 0;
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+
+    }
+    button{
+        font-size: 3rem;
+        background-color: #fff;
+        border: none;
+    }
+}
+
+.product-content {
+    width: 90%;
+    max-width: 1800px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    .product{
+        position: relative;
+        border: solid 1px black;
+    }
+    .img-product {
+        width: 100%;
+    }
+    h1{
+        text-align: left;
+        padding:1rem;
+        color: black;
+        font-size: 1.5rem;
+    }
+    h2 {
+        padding: 1rem;
+        color: green;
+        font-size: 1.3rem;
+        font-weight: map-get($font-weights, 'regular' );
+    };
+    p{
+        font-size: 1.5rem;
+        padding:1rem ;
+    };
+    p span {
+        text-transform: uppercase;
+    };
+    .banner-new{
+        margin: 1rem 0;
+        @include banner(#63DA46)
+    }
+    .banner-sale {
+        @include banner(#F24D4D)
+    }
+    .banner {
+        position: absolute;
+        top: 10%;
+        left: 60%;
+    }
+    .shoping-cart{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        height: 70px;
+        background-color: black;
+        position: absolute;
+        bottom: .8rem;
+        right: .8rem;
+        i{
+            font-size: 1.7rem;
+            color: white;
+        }
+      
+    }
+}
+.btn-moreview {
+    text-align: center;
+    grid-column: span 4;
+    padding: 1.2rem 5.9rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    button{
+    @include button-style;
+    }
+}

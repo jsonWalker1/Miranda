@@ -1,0 +1,25 @@
+.main-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    padding: 15rem 0;
+    z-index: 3;
+    
+    .banner-content{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.6rem;
+        width: 20%;
+        img {
+            width: 18%;
+            border: 3px solid yellow;
+            border-radius: 50%;
+        }
+        p {
+            margin: 0 30px;
+        }
+    }
+}
