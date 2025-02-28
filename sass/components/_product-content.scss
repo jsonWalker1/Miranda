@@ -15,18 +15,18 @@
 }
 
 .product-content {
-    width: 90%;
-    max-width: 1800px;
+    max-width: 1550px;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     .product{
+        width: auto;
         position: relative;
         border: solid 1px black;
     }
     .img-product {
-        width: 100%;
+        width: auto;
     }
     h1{
         text-align: left;
@@ -57,7 +57,7 @@
     .banner {
         position: absolute;
         top: 10%;
-        left: 60%;
+        right: 0%;
     }
     .shoping-cart{
         display: flex;

@@ -1,23 +1,10 @@
-//console.log(1);
-
-/*
-1.potřebuju on click atributem spustit funkci která fetchne soubor a načte ji do array 
-        (if statement pro to zdali už array přitomna)    
-
-2. potřebuju vytvořít loop, která následně rozřadí všchny věci do konkrétních kategorií. 
-
-3. následně
-    vytvořím var kde se bude přidávat HTML pomocí loop a tempalte stringů.
-    všechno innertnu do picknutýho divu 
-
-*/ 
 fetchProduct();
 let dataProduct = null;
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
         console.log('ahoj')
-        const category = button.getAttribute('data-category'); // Získání kategorie z atributu
-        filterProductsByCategory(category); // Filtruj podle kategorie
+        const category = button.getAttribute('data-category'); 
+        filterProductsByCategory(category); 
     });
 });
 
