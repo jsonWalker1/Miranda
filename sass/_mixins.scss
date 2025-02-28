@@ -1,9 +1,16 @@
 @mixin button-style {
-    margin-top: 4.5rem;
     padding: 1.2rem 5.9rem;
     font-size: 0.9rem;
     font-weight: 500;
     box-shadow: 0 3px 7px black;
+    @media (max-width:700px) {
+
+        padding: .7rem 3.5rem;
+    }
+}
+@mixin button-hover{
+        transform: scale(1.1);
+        transition: 1s;
 }
 
 @mixin button-style-gold {
@@ -21,14 +28,17 @@
     background-image: url($img-url);
     background-size: $size;
     background-position: $position;
-    width: 600px;
-    height: 600px;
+    width: 500px;
+    height: 500px;
     box-shadow: 0 3px 7px black;
     h1{
         margin-top: 30%;
         color: $fontColor;
         font-size: 2.5rem;
-       
+    }
+    @media (max-width: 850px) {
+        width: 450px;
+        height: 300px;
     }
 }
 
@@ -37,6 +47,8 @@
     background-size: $size;
     background-position: $position;
     box-shadow: 0 3px 7px black;
+    height: 700px;
+    width: auto;
     
 }
 @mixin img-style2($img-url, $size: cover, $position: center) {
@@ -63,7 +75,6 @@
 }
 
 @mixin logo($width: 223px, $height: 66px, $bg-color: #E9E9E9, $font-size: .9rem) {
-    margin-right: 13rem;
     display: flex;
     justify-content: center;
     align-items: center;

@@ -1,7 +1,7 @@
 /*MAIN-SCREEN 1*/
 .main-screen1{
     width: 100%;
-    height: 80%;
+    height: 70vh;
     background-image: url('/img/01.jpg');
     background-position: center;
     background-size: 100% 127%;
@@ -20,10 +20,23 @@
             letter-spacing: .2rem;
         }
         h2{
-            font-size: 2.5rem;    
+            font-size: 2rem;    
         }
         button {
+            margin-top: 4.5rem;
             @include button-style;
+        }
+        button:hover {
+            @include button-hover;
+        }
+        @media (max-width:700px) {
+            h1 {
+                font-size: .75rem;
+            }
+            h2 {
+                font-size: 2rem;
+            }
+            background-size: 220% 100%;
         }
 }
 
@@ -31,65 +44,96 @@
 /*MAIN-SCREEN 2 */
 
 .main-screen2 {
-        gap: 1.5rem;
-        display: flex;
-        width: 100%;
-        height: 565px;
-        margin: 3rem 0;
-        justify-content: center;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1.5rem; 
+    width: 100%; 
+    max-width: 1550px; 
+    margin: 3rem auto; 
+    justify-items: center; 
+    align-items: center; 
+    text-align: center;
     .img1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @include img-style('/img/c2-01.png');
         filter: brightness(1.5) blur(2px) drop-shadow(.5px);
         
         button {
+            margin-top: 3rem;
             @include button-style;
+        }
+        h1{
+            font-size: 2rem;
+            margin: 0
         }
     }
 
     .img2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @include img-style('/img/c2-02.jpg');
 
         button {
+            margin-top: 3rem;
             @include button-style;
+        }
+        h1{
+            font-size: 2rem;
+            margin: 0
         }
     }
 
     .img3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         @include img-style('/img/c2-03.jpg', 200%, 45% 30%);
         
         button {
+            margin-top: 3rem;
             @include button-style;
+        }
+        h1{
+            font-size: 2rem;
+            margin: 0;
         }
     }
 }
 
 /*MAIN-SCREEN 3*/
-
-.main-screen3 {
-    width: 100%;
-    height: 710px;
+.background {
     background-color: black;
+    width: 100%;
+    height: 640px;
     h1{
-        padding: 5rem 0;
-        font-weight: 400;
+        padding: 3.5rem 0;
         text-align: center;
+        font-weight: 400;
         color: $fontColor;
-        font-size: 3.5rem;
+        font-size: 2rem;
     }
 }
-.img-content {
-        width: 90%; 
-        max-width: 1800px; 
-        margin: 0 auto; 
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-       
-        
-.imgRelative1 {
+.main-screen3 {
+    gap: 3;
+    background-color: black;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    max-width: 1550px;
+    margin: 0 auto;
+    .imgRelative1 {
         @include img-style1('/img/c3-01.jpg');
+        
     }
     .imgRelative2 {
+        button{
+            display: none;
+        }
         @include img-style1('/img/c2-02.jpg');
     }
     .imgRelative3 {
@@ -97,10 +141,34 @@
     }
     .imgRelative4 {
         @include img-style1('/img/c3-04.jpg');
+        button{
+        @include button-style-gold;
+        margin-top: 3rem;
+        }
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1250px) {
         .imgRelative1 {
-            height: 750px;
+            a{
+                font-size: 2rem;
+            }
+            margin-left: 30px;
+            width: auto;
+            height: 600px;
+        }
+        .imgRelative2 {
+            a{
+                font-size: 2rem;
+            }
+            margin-right: 30px;
+            width: auto;
+            height: 600px;
+            button{
+                @include button-style-gold;
+                margin-top: 3rem;
+                display: block;
+                width: 15.1rem;
+                height: 7.38rem;
+                }
         }
         .imgRelative3 {
             display: none;
@@ -108,18 +176,20 @@
         .imgRelative4 {
             display: none;
         }
+        a{
+            font-size: .7rem;
+        }
     }
-    h1 {
-        grid-column: span 2; // Zabere celý řádek
-        text-align: left;
+    h1{
         font-size: 1rem;
-        font-weight: map-get($font-weights, 'regular');
-        margin-top: 24rem;
-        padding: 1rem;
+        text-align: left;
+        padding: 0 1.5rem;
+        margin-top: 29rem;
     }
-
     a {
-        font-size: 3rem;
+        text-align: left;
+        padding: 0 1.5rem;
+        font-size: 2.5rem;
         color: $fontColor;
         padding: 1rem;
     }
@@ -128,10 +198,11 @@
         text-transform: uppercase;
     }
 
-    button{
-        @include button-style-gold;
+    
     }
-}
+
+
+        
 
 
 
