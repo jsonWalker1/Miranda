@@ -10,31 +10,76 @@
         grid-template-columns: repeat(3, 1fr);
         position: relative;
     }
-    h1{
-        padding: 5rem 0;
-        text-align: center;
-        color: $fontColor;
-        font-size: 3rem;
-        font-weight: 400;
+    @media (max-width:1850px) {
+        .blog-board{
+            width: auto;
+        grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
+
+        }
+    }
+    @media (max-width:1426px) {
+        .blog-content5{
+            display: none;
+        }
     }
     button{
         position: absolute;
         bottom: -88%;
-right: -1%;
+        right: -1%;
         @include button-style-gold;
     }
 }
 .blog-content1{
-        @include img-style2('/img/blog/blog1.jpg')
+        @include img-style2('/img/blog/blog1.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: $fontColor;
+        padding: 2rem;
+
+        h1{
+            font-size: .9rem;
+            font-weight: 300;
+        }
 }
 .blog-content2{
-        @include img-style2('/img/blog/blog2.jpg')
+        @include img-style2('/img/blog/blog2.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: $fontColor;
+        padding: 2rem;
+
+        h1{
+            font-size: .9rem;
+            font-weight: 300;
+        }
 }
 .blog-content3{
-        @include img-style2('/img/blog/blog3.jpg')
+        @include img-style2('/img/blog/blog3.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: $fontColor;
+        padding: 2rem;
+
+        h1{
+            font-size: .9rem;
+            font-weight: 300;
+        }
 }
 .blog-content4{
-    @include img-style2('/img/blog/blog4.jpg')
+    @include img-style2('/img/blog/blog4.jpg');
+    display: flex;
+        flex-direction: column;
+        justify-content: end;
+        color: $fontColor;
+        padding: 2rem;
+
+        h1{
+            font-size: .9rem;
+            font-weight: 300;
+        }
 }
 .blog-content5{
     background-image: url('/img/blog/blog5.jpg');

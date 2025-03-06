@@ -18,7 +18,7 @@
     max-width: 1550px;
     display: grid;
     margin: 0 auto;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
     .product{
         width: auto;
@@ -30,7 +30,7 @@
     }
     h1{
         text-align: left;
-        padding:1rem;
+        padding: 1rem;
         color: black;
         font-size: 1.5rem;
     }
