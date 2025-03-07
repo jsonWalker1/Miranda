@@ -1,25 +1,39 @@
 .main-banner {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 10rem 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     position: relative;
-    padding: 15rem 0;
+    width: 75%; 
     z-index: 3;
-
-    .banner-content{
-
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 1.6rem;
-        width: 20%;
-        img {
-            width: 18%;
-            border: 3px solid yellow;
-            border-radius: 50%;
-        }
-        p {
-            margin: 0 30px;
-        }
-    }
 }
+
+ .banner-content{
+    display: flex;
+    width: 80%;
+    margin: 0 4rem;
+    img{
+        width: 55px;
+        height: 55px;
+    }
+    p{
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+ }
+ .banner-content-span{
+    display: flex;
+    width: 100%;
+    margin-left: 4rem;
+    img{
+        border: solid 3px #ECB235;
+        border-radius: 100%;
+        width: 35px;
+        height: 35px;
+    }
+    p{
+        margin-left: 20px;
+        font-size: 1.2rem;
+    }
+ }
+ 

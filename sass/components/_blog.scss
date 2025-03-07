@@ -2,6 +2,11 @@
     width: 100%;
     height: 1200px;
     background-color: black;
+    h1{
+        text-align: center;
+        padding: 2rem 0;
+        color: #fff;
+    }
     .blog-board{
         display: grid;
         width: 1800px;
@@ -12,14 +17,21 @@
     }
     @media (max-width:1850px) {
         .blog-board{
-            width: auto;
-        grid-template-columns: repeat(auto-fit, minmax(470px, 1fr));
-
+            width: 900px;
+            height: 450px;
+            justify-content: center;
+        grid-template-columns: repeat(2, 1fr);
         }
-    }
-    @media (max-width:1426px) {
         .blog-content5{
             display: none;
+        }
+    }
+    @media (max-width:1250px) {
+        .blog-board{
+            margin: 0 1rem;
+            width: auto;
+            height: 300px;
+        grid-template-columns: 1fr;
         }
     }
     button{
