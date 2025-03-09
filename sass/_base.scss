@@ -18,3 +18,23 @@ body::before {
     pointer-events: none;
     z-index: 9999;
   }
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: linear-gradient(135deg, #ffd90059, #ffffff, #ffd90059, #ffffff);
+    background-size: 400% 400%; 
+    animation: gradient-animation 10s ease infinite; 
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}

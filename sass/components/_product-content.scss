@@ -8,9 +8,11 @@
 
     }
     button{
-        font-size: 3rem;
+        font-size: 1.2rem;
         background-color: #fff;
         border: none;
+        background-color: transparent;
+        cursor: pointer;
     }
 }
 
@@ -20,13 +22,37 @@
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
+    
     .product{
-        width: auto;
+        margin: 0 auto;
+        width: 22rem;
         position: relative;
+        transition: transform 0.3s ease;
+    }
+    .product:hover{
+        transform: scale(1.2);
         border: solid 1px black;
+        box-shadow: 0 3px 7px black;
+
+    }
+    .product:hover .shoping-cart{
+        display: flex;
+        animation: shake 0.6s ease-out;
+    }
+    @media (max-width:800px) {
+        .product{
+            width: 15rem;
+        }
+        .img-product{
+            width: 200px;
+        }
+        .product-content{
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        }
     }
     .img-product {
-        width: auto;
+        background-color: transparent;
+        width: 100%;
     }
     h1{
         text-align: left;
@@ -60,20 +86,39 @@
         right: 0%;
     }
     .shoping-cart{
-        display: flex;
+
+        display: none;
         justify-content: center;
         align-items: center;
-        width: 70px;
+        width: 70px; 
         height: 70px;
         background-color: black;
         position: absolute;
         bottom: .8rem;
         right: .8rem;
+        transition: transform 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 3px 7px black;
         i{
             font-size: 1.7rem;
             color: white;
         }
       
+    }
+    .btn-more-product {
+        margin: 3.2rem auto;
+        grid-column: span 6;
+        @include button-style;
+    &:hover{
+        @include button-hover
+        }
+    }
+}
+@media (max-width:800px) {
+    .product-content{
+        .product:hover{
+            transform: scale(1.1);}
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     }
 }
 .btn-moreview {
@@ -85,4 +130,13 @@
     button{
     @include button-style;
     }
+}
+
+
+@keyframes shake {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
+    100% { transform: rotate(0deg); }
 }
