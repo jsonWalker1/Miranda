@@ -45,11 +45,11 @@
 
 .main-screen2 {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(485px, 1fr));
     gap: 1.5rem; 
     width: 100%; 
     max-width: 1550px; 
-    margin: 3rem auto; 
+    margin: 0 auto; 
     justify-items: center; 
     align-items: center; 
     text-align: center;
