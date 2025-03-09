@@ -6,3 +6,15 @@
     text-decoration: none;
     list-style: none;
 }
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: repeating-linear-gradient(transparent 0px, transparent 49px, rgba(0, 0, 0, 0.2) 50px),
+                repeating-linear-gradient(90deg, transparent 0px, transparent 49px, rgba(0, 0, 0, 0.2) 50px);
+    pointer-events: none;
+    z-index: 9999;
+  }

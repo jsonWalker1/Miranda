@@ -22,7 +22,7 @@ export async function filterProductsByCategory(category) {
                 </div>
             `;
         });
-
+        
         productsContainer.innerHTML = indexHTML; 
     } else {
         console.log('Žádná data nejsou k dispozici.');

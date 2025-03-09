@@ -1,7 +1,9 @@
 .footer-nav-bar{
+    position: relative;
     background-color: black;
     width: 100%;
     height: 1000px;
+    z-index: 3;
     .main-container{
         margin:0 15%;
         padding-top: 100px;

@@ -2,7 +2,7 @@ import { filterProductsByCategory } from "./moduls/product-filter.js";
 import { fetchProduct } from "./moduls/fetch-product.js";
 console.log(1)
 fetchProduct();
-console.log(dataProduct);
+//console.log(dataProduct);
 document.querySelectorAll('.filter-btn').forEach(button => {
     button.addEventListener('click', () => {
          console.log('ahoj')
