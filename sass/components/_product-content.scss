@@ -105,14 +105,7 @@
         }
       
     }
-    .btn-more-product {
-        margin: 3.2rem auto;
-        grid-column: span 6;
-        @include button-style;
-    &:hover{
-        @include button-hover
-        }
-    }
+    
 }
 @media (max-width:800px) {
     .product-content{
@@ -139,4 +132,12 @@
     50% { transform: rotate(5deg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
+}
+.btn-more-product {
+    display: block;
+    margin: 3.2rem auto;
+    @include button-style;
+&:hover{
+    @include button-hover
+    }
 }
