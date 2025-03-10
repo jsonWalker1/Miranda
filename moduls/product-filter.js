@@ -37,7 +37,7 @@ export async function filterProductsByCategory(category) {
     else if (!firstLoad && category === 'all-product') {
         console.log('all product funguje') 
      
-        data.forEach(product => {
+        dataProduct.forEach(product => {
             indexHTML += `
                 <article class="product">
                     <figure>
