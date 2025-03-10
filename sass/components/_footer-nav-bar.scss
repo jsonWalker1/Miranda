@@ -34,15 +34,17 @@
 
 .footer-bar {
     h1 {
+        font-family: 'medium';
         padding-bottom: 3rem;
-        font-size: 1.1rem;
+        font-size: 1.125rem;
         color: #fff;
     }
     li {
         padding: 4px 0;
     }
     li a {
-        font-size: 1.1rem;
+        font-family: 'medium';
+        font-size: 1.125rem;
         color: #fff;
     }
 }
@@ -54,9 +56,13 @@
         font-size: 1.4rem;
     }
     p {
+        font-family: 'medium';
+        font-size: 1.125rem;
         padding-top: 1rem;
     }
     a {
+        font-family: 'medium';
+        font-size: 1.125rem;
         color: #fff;
     }
 }
@@ -78,14 +84,17 @@
     display: flex;
     justify-content: space-between;
     padding-bottom: 3rem;
+    font-family: 'medium';
+    font-size: 1.125rem;
 }
 .miranda{
     display: flex;
     justify-content: center;
     
     p{
+        font-family: 'medium';
+        font-size: 1.125rem;
         color: #fff;
-        font-size: 1.1rem;
         padding: 0 1.5rem;
     }
 }

@@ -16,15 +16,16 @@
         width: 55px;
         height: 55px;
     }
-    p{
+    p{  font-family: 'medium';
         margin-left: 20px;
-        font-size: 1.2rem;
+        font-size: 1.125rem;
     }
 }
  .banner-content1{
     display: flex;
     width: 80%;
     margin: 0 4rem;
+    font-family: 'medium';
     img{
         border: solid 2px #ECB235;
         border-radius: 50%;
@@ -34,7 +35,7 @@
     }
     p{
         margin-left: 20px;
-        font-size: 1.2rem;
+        font-size: 1.125rem;
     }
 }
  @media (max-width:1359px) {
@@ -43,9 +44,6 @@
         grid-template-columns: repeat(2, 1fr);
         width: 100%;
     }
-    /*.banner-content{
-   
-    }*/
     .banner-content-span{
         margin: 0 auto;        
         img{

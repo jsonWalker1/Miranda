@@ -1,4 +1,4 @@
-/*product */
+/*product section*/
 .nav-product {
     ul {
         margin-top: 22rem;
@@ -6,10 +6,10 @@
         display: flex;
         justify-content: center;
         gap: 2.5rem;
-
     }
     button{
-        font-size: 1.2rem;
+        font-family: 'light';
+        font-size: 1rem;
         background-color: #fff;
         border: none;
         background-color: transparent;
@@ -18,17 +18,23 @@
     }
 }
 .Novinky.active{
-    color: green;
+    font-family: 'light';
+    font-weight: bold;
+    font-size: 1.5rem;
     transition: 1s;
-    transform: scale(1.3);
+    transform: scale(1.2);
 }
 .Doporučené.active{
-    color: green;
+    font-family: 'light';
+    font-weight: bold;
+    font-size: 1.5rem;
     transition: 1s;
     transform: scale(1.2);
 }
 .Nejprodávanější.active{
-    color: green;
+    font-family: 'light';
+    font-weight: bold;
+    font-size: 1.5rem;
     transition: 1s;
     transform: scale(1.2);
 }
@@ -75,15 +81,16 @@
         width: 100%;
     }
     a{
+        font-family: 'medium';
         text-align: left;
-        padding: 1rem;
         color: black;
-        font-size: 1.5rem;
+        font-size: 1.125rem;
     }
     h2 {
+        font-family: 'roboto-thin';
         padding: 1rem;
         color: green;
-        font-size: 1.3rem;
+        font-size: .9rem;
         font-weight: map-get($font-weights, 'regular' );
     };
     p{

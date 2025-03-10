@@ -1,8 +1,8 @@
-/*MAIN-SCREEN 1*/
+//Landing page
 .main-screen1{
     width: 100%;
     height: 70vh;
-    margin: 3rem 0;
+    margin: 0rem 0 3rem 0;
     background-image: url('/img/01.jpg');
     background-position: center;
     background-size: 100% 127%;
@@ -16,13 +16,15 @@
      transition: background-size 1s ease, height 1s ease;
         h1{
             padding: 1rem 0;
+            font-family: 'light';
             font-size: 1.1rem;
             text-transform: uppercase;
             font-weight: 300;
             letter-spacing: .2rem;
         }
         h2{
-            font-size: 2rem;    
+            font-family: 'medium';
+            font-size: 2.25rem;    
         }
         button {
             margin-top: 4.5rem;
@@ -43,7 +45,7 @@
 }
 
 
-/*MAIN-SCREEN 2 */
+/*SEKCE NAKUPUJ*/
 
 .main-screen2 {
     display: grid;
@@ -62,18 +64,6 @@
         align-items: center;
         @include img-style('/img/c2-01.png');
         filter: brightness(1.5) blur(2px) drop-shadow(.5px);
-        
-        button {
-            margin-top: 3rem;
-            @include button-style;
-        }
-        button:hover{
-            @include button-hover
-        }
-        h1{
-            font-size: 2rem;
-            margin: 0
-        }
     }
 
     .img2 {
@@ -82,18 +72,6 @@
         justify-content: center;
         align-items: center;
         @include img-style('/img/c2-02.jpg');
-
-        button {
-            margin-top: 3rem;
-            @include button-style;
-        }
-        button:hover{
-            @include button-hover
-        }
-        h1{
-            font-size: 2rem;
-            margin: 0
-        }
     }
 
     .img3 {
@@ -102,18 +80,6 @@
         justify-content: center;
         align-items: center;
         @include img-style('/img/c2-03.jpg', 200%, 45% 30%);
-        
-        button {
-            margin-top: 3rem;
-            @include button-style;
-        }
-        button:hover{
-            @include button-hover
-        }
-        h1{
-            font-size: 2rem;
-            margin: 0;
-        }
     }
 }
 @media (max-width:1572px) {
@@ -127,18 +93,19 @@
     }
 }
 
-/*MAIN-SCREEN 3*/
+/*SEKCE VYBER SI Z NASI NABIDKY*/
 .background {
     background-color: black;
     width: 100%;
     height: 640px;
     margin-top: 3rem;
     h1{
+        font-family: 'medium';
+        font-weight: 500;
         padding: 3.5rem 0;
         text-align: center;
-        font-weight: 400;
         color: $fontColor;
-        font-size: 2rem;
+        font-size: 2.25rem;
     }
 }
 @media (max-width:1250px) {
@@ -220,23 +187,7 @@
             font-size: .7rem;
         }
     }
-    h1{
-        text-align: left;
-        font-size: 1rem;
-        text-align: left;
-        padding: 0 1.5rem;
-        margin-top: 29rem;
-    }
-    a {
-        text-align: left;
-        padding: 0 1.5rem;
-        font-size: 2.5rem;
-        color: $fontColor;
-        padding: 1rem;
-    }
-    .more-view{
-        text-align: ri;
-    }
+    
     a span {
         text-transform: uppercase;
     }

@@ -7,3 +7,16 @@ $font-weights: (
 );
 
 $backgroundColorForm: #ECB235;
+
+@font-face {
+    font-family: 'light';
+    src: url(/assets/fonts/Montserrat/Montserrat-Light.ttf);
+}
+@font-face {
+    font-family: 'medium';
+    src: url(/assets/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'bold';
+    src: url(/assets/fonts/Montserrat/Montserrat-Bold.ttf);
+}

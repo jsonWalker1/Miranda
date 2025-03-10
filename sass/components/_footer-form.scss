@@ -54,7 +54,8 @@
     button {
         position: relative;
         z-index: 999;
-        font-size: .8rem;
+        font-family: 'light';
+        font-size: .9rem;
         color: #fff;
         background-color: black;
         width: 13%;
@@ -62,14 +63,16 @@
         
     }
     h1{
+        font-family: 'medium';
         text-align: center;
         padding-top: 4%;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-weight: 400;
         color: #fff;
     }
     input::placeholder {
-        font-size: 1rem;
+        font-family: 'light';
+        font-size: 1.2rem;
         color: gray;
         font-style: italic;
         padding-left: 10%;
