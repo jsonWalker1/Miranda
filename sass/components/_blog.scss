@@ -75,11 +75,24 @@
 .blog-content4{
     @include img-style2('/img/blog/blog4.jpg');
     display: flex;
+    position: relative;
         flex-direction: column;
         justify-content: end;
         color: $fontColor;
         padding: 2rem;
-
+        button{
+            display: none;
+        }
+}
+@media (max-width:1850px) {
+    .blog-content4{
+        button{
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: -15%;
+        }
+    }
 }
 .blog-content5{
     background-image: url('/img/blog/blog5.jpg');
@@ -89,10 +102,16 @@
     height: 422px;
     grid-column: span 2;
     display: flex;
-        flex-direction: column;
-        justify-content: end;
-        color: $fontColor;
-        padding: 2rem;
+    flex-direction: column;
+    justify-content: end;
+    color: $fontColor;
+    padding: 2rem;
+    position: relative;
+    button{
+        position: absolute;
+        right: 0;
+        bottom:-18%
+        }
     h1{
         text-align: left;
         font-size: .9rem;
