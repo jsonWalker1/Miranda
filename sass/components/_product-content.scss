@@ -51,20 +51,7 @@
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         }
     }
-    @media (max-width:500px) {
-        .product{
-            width: 8rem;
-        }
-        .img-product{
-            width: 150px;
-        }
-        .product-content{
-            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-            h1{
-                font-size: 1rem;
-            }
-        }
-    }
+    
     .img-product {
         background-color: transparent;
         width: 100%;
