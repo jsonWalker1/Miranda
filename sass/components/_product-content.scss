@@ -14,15 +14,22 @@
         border: none;
         background-color: transparent;
         cursor: pointer;
+        transition: 1s;
     }
 }
 .Novinky.active{
-    transform: scale(1.2);
+    color: green;
+    transition: 1s;
+    transform: scale(1.3);
 }
 .Doporučené.active{
+    color: green;
+    transition: 1s;
     transform: scale(1.2);
 }
 .Nejprodávanější.active{
+    color: green;
+    transition: 1s;
     transform: scale(1.2);
 }
 
@@ -32,6 +39,7 @@
     margin: 0 auto;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 20px;
+    transition: all 1s ease;
     
     .product{
         margin: 0 auto;
@@ -55,6 +63,7 @@
         }
         .img-product{
             width: 200px;
+            transition: width 1s ease, height 1s ease, transform 1s ease;
         }
         .product-content{
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -123,6 +132,7 @@
         .product:hover{
             transform: scale(1.1);}
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        transition: all 1s ease;
     }
 }
 .btn-moreview {

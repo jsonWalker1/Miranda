@@ -36,6 +36,7 @@
     width: 500px;
     height: 500px;
     box-shadow: 0 3px 7px black;
+    transition: background-size 1s ease, height 1s ease;
     h1{
         margin-top: 30%;
         color: $fontColor;
@@ -54,6 +55,7 @@
     box-shadow: 0 3px 7px black;
     height: 700px;
     width: auto;
+    transition: background-size 1s ease, height 1s ease;
     
 }
 @mixin img-style2($img-url, $size: cover, $position: center) {
@@ -63,6 +65,7 @@
     width: 600px;
     height: 420px;
     box-shadow: 0 3px 7px black;
+    transition: background-size 1s ease, height 1s ease;
     h1{
         text-align: left;
         font-size: .9rem;
