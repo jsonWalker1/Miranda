@@ -16,6 +16,15 @@
         cursor: pointer;
     }
 }
+.Novinky.active{
+    transform: scale(1.2);
+}
+.Doporučené.active{
+    transform: scale(1.2);
+}
+.Nejprodávanější.active{
+    transform: scale(1.2);
+}
 
 .product-content {
     max-width: 1550px;
