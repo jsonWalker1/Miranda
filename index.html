@@ -1,17 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cz">
 <head>
+    <!--CDN PRO IKONY -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--SRC PRO CSS Z PREPROCESORU-->
     <link rel="stylesheet" href="/css/main.css">
+    <!--CDN SWIPER-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demoday</title>
+    <!--TITLE TAG -->
+    <title>Investiční zlato | Zlaté mince a slitky pro bezpečné investice</title>
+    <!--SERP-->
+    <meta name="description" content="Investujte do zlata nabízíme širokou nabídku investičních zlatých mincí, slitků a poradenství. Zajistěte si hodnotu pro budoucnost.">
+    <!--FAVICON-->
+    <link rel="icon" href="/assets/img/gold.png" type="image/x-icon">
 </head>
+
 <body>
+
+
+
+<!-- MAIN HEADER -->
     <header id="header">
-        <div class="container">
-            <div class="logo">logo</div>
-            <nav class="nav-bar">
+        <div class="header__container">
+            <div class="header__logo">logo</div>
+            <nav class="header__nav-bar">
                 <ul>
                     <li><a href="">Produkty <span class="arrow">&#9662;</span></a></li>
                     <li><a href="">Akční nabídka</a></li>
@@ -20,233 +34,288 @@
 
                 </ul>
             </nav>
-            <div class="search-bar">
+            <div class="header__search-bar">
                 <input placeholder="napište,co hledáte" type="text">
                 <i class="fas fa-search"></i>
             </div>    
-            <div class="user-nav">
+            <div class="header__user-nav">
                 <ul>
                     <li><a href="">CZK<span class="arrow">&#9662;</span></a></li>
                     <li><a href="">Košík</a></li>
                     <li><a href=""></a><i class="fas fa-user-circle"></i></li>
                 </ul>
             </div>
-            <div class="hamburger-menu">
+
+
+            <!-- HAMBURGER MENU PRO MOBILNÍ VERZE-->
+            <div class="header__hamburger-menu">
                 <div class="line"></div>
                 <div class="line"></div>
             </div>
         </div>
     </header>
 
+
+
+    <!-- KARUSEL - SWIPER - HALVNÍ OBSAH STRÁNKY -->
     <main id="main">
-        <div class="main-screen1">
-            <h1>Lorem ipsum dolor sit</h1>
-            <h2>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
-            <button>Zobrazit</button>
+            <!-- Slider main container -->
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide">
+                <h1>Lorem ipsum dolor sit</h1>
+                <h2>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
+                <button>Zobrazit</button>
+            </div>
+            <div class="swiper-slide">
+                <h1>Lorem ipsum dolor sit</h1>
+                <h2>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
+                <button>Zobrazit</button>
+            </div>
+            <div class="swiper-slide">
+                <h1>Lorem ipsum dolor sit</h1>
+                <h2>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit.</h2>
+                <button>Zobrazit</button>
+            </div>
+            ...
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
         </div>
-        <div class="main-screen2">
-            <div class="img1">
+
+
+    <!-- SEKCE PRO HLAVNÍ OBSAH S BUTTONEM KUPUJ -->
+        <section class="main-screen">
+            <div class="main-screen__img1">
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-                <button>Nakupuj</button>
+                <button aria-label="Nakupuj">Nakupuj</button>
             </div>
-            <div class="img2">
+            <div class="main-screen__img2">
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-                <button>Nakupuj</button>
+                <button aria-label="Nakupuj">Nakupuj</button>
             </div>
-            <div class="img3">
+            <div class="main-screen__img3">
                 <h1>Lorem ipsum dolor sit amet, consectetur</h1>
-                <button>Nakupuj</button>
+                <button aria-label="Nakupuj">Nakupuj</button>
             </div>
-        </div>
-        <div class="background">
+        </section>
+
+
+
+    <!-- SEKCE PRO OBSAH 'VYBERET SI Z NAŠÍ NABÍDKY'-->
+        <section class="main-screen2">
             <h1>Vyberte si z naši nabídky</h1>
-            <div class="main-screen3">
-            
-                <div class="imgRelative1">
+            <div class="main-screen2__board">
+                <article class="main-screen2__imgRelative1">
                     <h1>Investiční</h1>
-                    <a href="">Zlaté mince</a>
-                </div>
-                <div class="imgRelative2">
+                    <a href="#">Zlaté mince</a>
+                </article>
+                <article class="main-screen2__imgRelative2">
                     <h1>Investiční</h1>
-                    <a href="">Zlaté slitky</a>
-                    <button><a href="">zobrazit vice</a></button>
-                </div>
-                <div class="imgRelative3">
+                    <a href="#">Zlaté slitky</a>
+                    <button aria-label="Zobrazit více informací"><a href="#">zobrazit vice</a></button>
+                </article>
+                <article class="main-screen2__imgRelative3">
                     <h1>Investiční</h1>
-                    <a href="">Zlaté mince</a>
-                </div>
-                <div class="imgRelative4">
+                    <a href="#">Zlaté mince</a>
+                </article>
+                <article class="main-screen2__imgRelative4">
                     <h1>Investiční</h1>
-                    <a href="">Zlaté mince <span>čnb</span></a>
-                    <button class="more-view"><a href="">zobrazit vice</a></button>
-                </div>
+                    <a href="#">Zlaté mince <span>čnb</span></a>
+                    <button class="main-screen2__more-view" aria-label="Zobrazit více informací"><a href="#">zobrazit vice</a></button>
+                </article>
             </div>
-        </div>
+        </section>
 
 
 
+    <!-- NAVIGACE PRO SEKCI S PRODUKTY-->
         <aside class="nav-product">
             <ul>
-                <li><button class="filter-btn Novinky" data-category="Novinky">Novinky</button></li>
-                <li><button class="filter-btn Doporučené" data-category="Doporučené">Doporučené</button></li>
-                <li><button class="filter-btn Nejprodávanější" data-category="Nejprodávanější">Nejprodávanější</button></li>
+                <li><button class="nav-product__filter-btn Novinky" data-category="Novinky">Novinky</button></li>
+                <li><button class="nav-product__filter-btn Doporučené" data-category="Doporučené">Doporučené</button></li>
+                <li><button class="nav-product__filter-btn Nejprodávanější" data-category="Nejprodávanější">Nejprodávanější</button></li>
             </ul>    
-            
         </aside>
-        
-            <div class="product-content"></div>
-            <button class="btn-more-product filter-btn" data-category="all-product">zobrazit více produktů</button>
-            <div class="blog">
-                <h1>Přečtěte si z našeho blogu</h1>
-                <div class="blog-board">
-                    <div class="blog-content1">
-                        <h1>20.12.2021</h1>
-                        <a href="">Lorem Ipsum</a>
-                            <div class="user">
-                                <i class="fas fa-user-circle"><a href="">Lukas</a></i>
-                                <a href="">0 komentáře</a>
-                            </div>
-                    </div>
-                    <div class="blog-content2">
-                        <h1>20.12.2021</h1>
-                        <a href="">Lorem Ipsum</a>
-                            <div class="user">
-                                <i class="fas fa-user-circle"><a href="">Lukas</a></i>
-                                <a href="">0 komentáře</a>
-                            </div>
-                    </div>
-                    <div class="blog-content3">
-                        <h1>20.12.2021</h1>
-                        <a href="">Lorem Ipsum</a>
-                            <div class="user">
-                                <i class="fas fa-user-circle"><a href="">Lukas</a></i>
-                                <a href="">0 komentáře</a>
-                            </div>
-                    </div>
-                    <div class="blog-content4">
-                        <h1>20.12.2021</h1>
-                        <a href="">Lorem Ipsum</a>
-                            <div class="user">
-                                <i class="fas fa-user-circle"><a href="">Lukas</a></i>
-                                <a href="">0 komentáře</a>
-                            </div>
-                        <button class="button4"><a href="">Zjistete vic</a></button>
-                    </div>
-                    <div class="blog-content5">
-                        <h1>20.12.2021</h1>
-                        <a href="">Lorem Ipsum</a>
-                            <div class="user">
-                                <i class="fas fa-user-circle"><a href="">Lukas</a></i>
-                                <a href="">0 komentáře</a>
-                            </div>
-                        <button><a href="">Zjistete vic</a></button>
-                    </div>
-                </div>
+
+
+
+    <!--ZDE JE DIV PRO PRODUKTY - OBSAH SE GENERUJE V /moduls/product-filter.js -->
+        <section class="product-content"></section>
+        <button class="nav-product__btn-more-product nav-product__filter-btn" data-category="all-product">zobrazit více produktů</button>
+    
+    
+    
+    <!-- ZDE JE OBSAH PRO BLOG -->
+        <section class="blog">
+            <header><h1>Přečtěte si z našeho blogu</h1></header>
+            <div class="blog__board">
+                <article class="blog__content1">
+                    <time>20.12.2021</time>
+                    <header><a href="">Lorem Ipsum</a></header>
+                        <aside class="blog__user">
+                            <i class="fas fa-user-circle"><a href="">Lukas</a></i>
+                            <a href="">0 komentáře</a>
+                        </aside>
+                </article>
+                <article class="blog__content2">
+                    <time>20.12.2021</time>
+                    <header><a href="">Lorem Ipsum</a></header>
+                        <aside class="blog__user">
+                            <i class="fas fa-user-circle"><a href="">Lukas</a></i>
+                            <a href="">0 komentáře</a>
+                        </aside>
+                </article>
+                <article class="blog__content3">
+                    <time>20.12.2021</time>
+                    <header><a href="">Lorem Ipsum</a></header>
+                        <aside class="blog__user">
+                            <i class="fas fa-user-circle"><a href="">Lukas</a></i>
+                            <a href="">0 komentáře</a>
+                        </aside>
+                </article>
+                <article class="blog__content4">
+                    <time>20.12.2021</time>
+                    <header><a href="">Lorem Ipsum</a></header>
+                        <aside class="blog__user">
+                            <i class="fas fa-user-circle"><a href="">Lukas</a></i>
+                            <a href="">0 komentáře</a>
+                        </aside>
+                    <button class="button4"><a href="">Zjistete vic</a></button>
+                </article>
+                <article class="blog__content5">
+                    <time>20.12.2021</time>
+                    <header><a href="">Lorem Ipsum</a></header>
+                        <aside class="blog__user">
+                            <i class="fas fa-user-circle"><a href="">Lukas</a></i>
+                            <a href="">0 komentáře</a>
+                        </aside>
+                    <button><a href="">Zjistete vic</a></button>
+                </article>
             </div>
-        
-            <aside class="main-banner">
-                    <div class="banner-content">
-                        <img src="/img/icon/car.png" alt="doprava zdarma">
-                        <p>Doprava zdarma na vše od 5 000 Kč</p>
-                    </div>
-                    <div class="banner-content">
-                        <img src="/img/icon/dolar.png" alt="">
-                        <p>Okamžitá fixace cen do 150 000 Kč</p>                    
-                    </div>
-                    <div class="banner-content">
-                        <img src="/img/icon/QR.png" alt="">
-                        <p>Možnost platby pomocí QR kódu</p>
-                        
-                    </div>
-                    <div class="banner-content1">
-                        <img src="/img/icon/bank.png" alt="">
-                        <p>Vykupujeme historické i novodobé mince<p>
-                    </div>
+        </section>
+    
+
+
+    <!-- ZDE JE OBSAH PRO BANNER -->
+        <aside class="main-banner">
+                <div class="main-banner__banner-content">
+                    <img src="/img/icon/car.png" alt="doprava zdarma">
+                    <p>Doprava zdarma na vše od 5 000 Kč</p>
+                </div>
+                <div class="main-banner__banner-content">
+                    <img src="/img/icon/dolar.png" alt="">
+                    <p>Okamžitá fixace cen do 150 000 Kč</p>                    
+                </div>
+                <div class="main-banner__banner-content">
+                    <img src="/img/icon/QR.png" alt="">
+                    <p>Možnost platby pomocí QR kódu</p>
+                    
+                </div>
+                <div class="main-banner__banner-content1">
+                    <img src="/img/icon/bank.png" alt="">
+                    <p>Vykupujeme historické i novodobé mince<p>
+                </div>
         </aside>
     </main>
 
-        <footer class="box">
-            <div class="form-group">
-                <div class="icon-background">
+
+
+    <!-- KONTAKTNÍ FORMULÁŘ -->
+    <footer class="box">
+        <form action="#" method="post">
+            <div class="box__form-group">
+                <div class="box__icon-background">
                 <i class="fa-solid fa-comment-dots"></i>
                 </div>
-                <form action="#" method="post">
-                    <h1>Zůstaňte s námi v kontaktu</h1>
-                    <div class="be-touch">
-                        <label for="email"></label>
-                        <input type="email" id="email" name="email" required placeholder="@ zadejte váš email">
-                        <button type="submit">Odeslat</button>
-                    </div>
-                </form>
-            </div>
-            <div class="footer-nav-bar">
-                <div class="logo-box">
-                    <div class="logo">logo</div>
+                
+                <header><h1>Zůstaňte s námi v kontaktu</h1></header>
+                <div class="box__be-touch">
+                    <label for="email"></label>
+                    <input type="email" id="email" name="email" required placeholder="@ zadejte váš email">
+                    <button type="submit">Odeslat</button>
                 </div>
-                <aside class="main-container">
-                    <div class="footer-bar">
-                        <h1>Jak nakoupit</h1>
-                        <nav>
-                            <ul>
-                                <li><a href="">Platební podmínky</a></li>
-                                <li><a href="">Fixační podmínky</a></li>
-                                <li><a href="">Dodací a skladovací podmínky</a></li>
-                                <li><a href="">Obchodní podmínky</a></li>
-                                <li><a href="">Ochrana osobních údajů</a></li>
-                                <li><a href="">Reklamace</a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                    <div class="footer-bar">
-                        <h1>Vaše objednávky</h1>
-                        <nav><ul>
-                            <li><a href="">Stav objednávky</a></li>
-                            <li><a href="">Stav poštovní zásilky</a></li>
-                            <li><a href="">Přehled služeb a benefitů</a></li>
-                            <li><a href="">Výkupní podmínky</a></li>
-                            <li><a href="">Nejčastější dotazy</a></li>
-                            <li><a href="">Grafi investiční kovů</a></li>
-                        </ul></nav>
-                    </div>
-                    <div class="footer-bar">
-                        <h1>O společnosti</h1>
-                        <nav><ul>
-                            <li><a href="">Základní informace</a></li>
-                            <li><a href="">Pobočky</a></li>
-                            <li><a href="">Kontakty</a></li>   
-                            <li><a href="">Partneří</a></li>
-                            <li><a href="">Blog</a></li>
-                            <li><a href="">Kariéra</a></li>
-                        </ul></nav>
-                    </div>
-                    <div class="footer-bar">
-                        <h1>Kontakty</h1>
-                        <div class="contact">
-                            <div class="soc">
-                                <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                                <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                            </div>
-                            <div class="contact-info">
-                                <p><i class="fa-solid fa-phone"></i> <a href="tel:+420123456789">+420 123 456 789</a></p>
+            </div>
+        </form>
+    
 
-                                <p>
-                                    <i class="fa-solid fa-envelope"></i> 
-                                    <a href="mailto:info@constantinvest.com">info@constantinvest.com</a>
-                                </p>
-                            </div>
+
+    <!-- FOOTER NAV-->
+        <section class="footer">
+            <div class="footer__logo-box">
+                <div class="footer__logo">logo</div>
+            </div>
+
+            <aside class="footer__main-container">
+                <div class="footer__footer-bar">
+                    <header><h1>Jak nakoupit</h1></header>
+                    <nav>
+                        <ul>
+                            <li><a href="">Platební podmínky</a></li>
+                            <li><a href="">Fixační podmínky</a></li>
+                            <li><a href="">Dodací a skladovací podmínky</a></li>
+                            <li><a href="">Obchodní podmínky</a></li>
+                            <li><a href="">Ochrana osobních údajů</a></li>
+                            <li><a href="">Reklamace</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="footer__footer-bar">
+                    <h1>Vaše objednávky</h1>
+                    <nav><ul>
+                        <li><a href="">Stav objednávky</a></li>
+                        <li><a href="">Stav poštovní zásilky</a></li>
+                        <li><a href="">Přehled služeb a benefitů</a></li>
+                        <li><a href="">Výkupní podmínky</a></li>
+                        <li><a href="">Nejčastější dotazy</a></li>
+                        <li><a href="">Grafi investiční kovů</a></li>
+                    </ul></nav>
+                </div>
+                <div class="footer__footer-bar">
+                    <h1>O společnosti</h1>
+                    <nav><ul>
+                        <li><a href="">Základní informace</a></li>
+                        <li><a href="">Pobočky</a></li>
+                        <li><a href="">Kontakty</a></li>   
+                        <li><a href="">Partneří</a></li>
+                        <li><a href="">Blog</a></li>
+                        <li><a href="">Kariéra</a></li>
+                    </ul></nav>
+                </div>
+                <div class="footer__footer-bar">
+                    <h1>Kontakty</h1>
+                    <div class="footer__contact">
+                        <div class="footer__soc">
+                            <a href="https://instagram.com" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://facebook.com" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        </div>
+                        <div class="footer__contact-info">
+                            <p><i class="fa-solid fa-phone"></i> <a href="tel:+420123456789">+420 123 456 789</a></p>
+
+                            <p>
+                                <i class="fa-solid fa-envelope"></i> 
+                                <a href="mailto:info@constantinvest.com">info@constantinvest.com</a>
+                            </p>
                         </div>
                     </div>
-                </aside>
-                <div class="create-be">
-                    <div class="copyright">Copyright 2021 Constant Invest</div>
-                    <div class="miranda">
-                        <a href="https://www.shoptet.cz/" target="_blank"><p>vytvořil Shoptet</p></a>
-                        <img src="/img/icon/miranda.png" alt="logo miranda">
-                        <a href="https://www.mirandamedia.cz/" target="_blank"><p>MirandaMedia Group s.r.o.</p></a>
-                    </div>
+                </div>
+            </aside>
+            <div class="footer__create-be">
+                <div class="footer__copyright">Copyright 2021 Constant Invest</div>
+                <div class="footer__miranda">
+                    <a href="https://www.shoptet.cz/" target="_blank"><p>vytvořil Shoptet</p></a>
+                    <img src="/img/icon/miranda.png" alt="logo miranda">
+                    <a href="https://www.mirandamedia.cz/" target="_blank"><p>MirandaMedia Group s.r.o.</p></a>
                 </div>
             </div>
-        </footer>    
+        </section>
+    </footer>
+
+    <!-- -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>    
+    <!-- -->
     <script type="module" src="index.js"></script>
 </body>
 </html>

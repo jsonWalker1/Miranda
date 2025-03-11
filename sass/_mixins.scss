@@ -28,7 +28,7 @@
             height: 4rem;
         }
 }
-//POZADÍ PRO NAKUPUJ /MAINSCREEN2/  
+//POZADÍ PRO NAKUPUJ /MAINSCREEN/  
 @mixin img-style($img-url, $size: cover, $position: center) {
     text-align: center;
     background-image: url($img-url);
@@ -56,7 +56,7 @@
         height: 300px;
     }
 }
-//POZADÍ PRO SEKCE VYBER SI Z NASI NABIDKY /MAIN SCREEN 3/
+//POZADÍ PRO SEKCE VYBER SI Z NASI NABIDKY /MAIN SCREEN 2/
 @mixin img-style1($img-url, $size: cover, $position: center) {
     background-image: url($img-url);
     background-size: $size;
@@ -96,7 +96,7 @@
     justify-content: end;
     color: $fontColor;
     padding: 2rem;
-    h1{
+    time{
         font-family: 'medium';
         text-align: left;
         font-size: .9rem;
@@ -111,7 +111,7 @@
         padding-right:5px;
         border-right: solid white 1px;
     }
-    .user {
+    .blog__user {
         display: flex;
         a{
             font-family: 'medium';

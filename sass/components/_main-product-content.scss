@@ -1,4 +1,4 @@
-/*product section*/
+//<!-- NAVIGACE PRO SEKCI S PRODUKTY-->
 .nav-product {
     ul {
         margin-top: 22rem;
@@ -16,28 +16,30 @@
         cursor: pointer;
         transition: 1s;
     }
+    .Novinky.active{
+        font-family: 'light';
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: 1s;
+        transform: scale(1.2);
+    }
+    .Doporučené.active{
+        font-family: 'light';
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: 1s;
+        transform: scale(1.2);
+    }
+    .Nejprodávanější.active{
+        font-family: 'light';
+        font-weight: bold;
+        font-size: 1.5rem;
+        transition: 1s;
+        transform: scale(1.2);
+    }
 }
-.Novinky.active{
-    font-family: 'light';
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition: 1s;
-    transform: scale(1.2);
-}
-.Doporučené.active{
-    font-family: 'light';
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition: 1s;
-    transform: scale(1.2);
-}
-.Nejprodávanější.active{
-    font-family: 'light';
-    font-weight: bold;
-    font-size: 1.5rem;
-    transition: 1s;
-    transform: scale(1.2);
-}
+
+//<!--ZDE JE CSCC PRO PRODUKTY-->
 
 .product-content {
     max-width: 1550px;
@@ -47,27 +49,28 @@
     gap: 20px;
     transition: all 1s ease;
     
-    .product{
+    .product-content__product{
         margin: 0 auto;
         width: 22rem;
         position: relative;
         transition: transform 0.3s ease;
     }
-    .product:hover{
+    .product-content__product:hover{
         transform: scale(1.2);
         border: solid 1px black;
         box-shadow: 0 3px 7px black;
 
     }
-    .product:hover .shoping-cart{
+    .product-content__product:hover .product-content__shoping-cart{
         display: flex;
         animation: shake 0.6s ease-out;
     }
-    @media (max-width:800px) {
-        .product{
+    
+@media (max-width:800px) {
+        .product-content__product{
             width: 15rem;
         }
-        .img-product{
+        .product-content__img-product{
             width: 200px;
             transition: width 1s ease, height 1s ease, transform 1s ease;
         }
@@ -76,7 +79,7 @@
         }
     }
     
-    .img-product {
+    .product-content__img-product {
         background-color: transparent;
         width: 100%;
     }
@@ -100,19 +103,19 @@
     p span {
         text-transform: uppercase;
     };
-    .banner-new{
+    .product-content__banner-new{
         margin: 1rem 0;
         @include banner(#63DA46)
     }
-    .banner-sale {
+    .product-content__banner-sale {
         @include banner(#F24D4D)
     }
-    .banner {
+    .product-content__banner {
         position: absolute;
         top: 10%;
         right: 0%;
     }
-    .shoping-cart{
+    .product-content__shoping-cart{
 
         display: none;
         justify-content: center;
@@ -134,15 +137,27 @@
     }
     
 }
+
+
+
 @media (max-width:800px) {
     .product-content{
-        .product:hover{
+        .product-content__product:hover{
             transform: scale(1.1);}
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         transition: all 1s ease;
     }
 }
-.btn-moreview {
+
+.nav-product__btn-more-product {
+    display: block;
+    margin: 3.2rem auto;
+    @include button-style;
+&:hover{
+    @include button-hover
+    }
+}
+.product-content__btn-moreview {
     text-align: center;
     grid-column: span 4;
     padding: 1.2rem 5.9rem;
@@ -153,19 +168,11 @@
     }
 }
 
-
+// ANIMACE PRO KOŠÍK
 @keyframes shake {
     0% { transform: rotate(0deg); }
     25% { transform: rotate(-5deg); }
     50% { transform: rotate(5deg); }
     75% { transform: rotate(-5deg); }
     100% { transform: rotate(0deg); }
-}
-.btn-more-product {
-    display: block;
-    margin: 3.2rem auto;
-    @include button-style;
-&:hover{
-    @include button-hover
-    }
 }

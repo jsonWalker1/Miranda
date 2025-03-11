@@ -1,6 +1,6 @@
 .box{
     position: relative;
-    .form-group {
+    .box__form-group {
         position: relative;
         background-color: $backgroundColorForm;
         width: 100%;
@@ -8,7 +8,7 @@
         z-index: 1;
         
   
-    .icon-background{
+    .box__icon-background{
         position: absolute;
         z-index: 2;
         width: 0%;
@@ -22,7 +22,7 @@
        opacity: 0.2;
        z-index: 2;
     }
-    .be-touch{ 
+    .box__be-touch{ 
         display: flex;
         justify-content: center;
         padding-top: 5rem;
@@ -44,10 +44,10 @@
          font-size: 1rem;
         }
 
-        .be-touch{
+        .box__be-touch{
             gap: 0;
         }
-        .icon-background{
+        .box__icon-background{
             display: none;
         }
     }

@@ -17,7 +17,7 @@
     p{
         color: #fff;
     }
-    .blog-board{
+    .blog__board{
         display: grid;
         width: 1800px;
         height: 450px;
@@ -26,18 +26,18 @@
         position: relative;
     }
     @media (max-width:1850px) {
-        .blog-board{
+        .blog__board{
             width: 900px;
             height: 450px;
             justify-content: center;
         grid-template-columns: repeat(2, 1fr);
         }
-        .blog-content5{
+        .blog__content5{
             display: none;
         }
     }
     @media (max-width:925px) {
-        .blog-board{
+        .blog__board{
             grid-template-columns: 1fr;
             width: auto;
             margin: 0 auto;
@@ -55,7 +55,9 @@
         transform: scale(1.2)
     }
 }
-.blog-content1{
+
+
+.blog__content1{
         @include img-style2('/img/blog/blog1.jpg');
         display: flex;
         flex-direction: column;
@@ -63,14 +65,14 @@
         color: $fontColor;
         padding: 2rem;
 }
-.blog-content2{
+.blog__content2{
         @include img-style2('/img/blog/blog2.jpg');
         
 }
-.blog-content3{
+.blog__content3{
         @include img-style2('/img/blog/blog3.jpg');
 }
-.blog-content4{
+.blog__content4{
     @include img-style2('/img/blog/blog4.jpg');
     position: relative;
         button{
@@ -78,7 +80,7 @@
         }
 }
 @media (max-width:1850px) {
-    .blog-content4{
+    .blog__content4{
         button{
             display: block;
             position: absolute;
@@ -87,7 +89,7 @@
         }
     }
 }
-.blog-content5{
+.blog__content5{
     background-image: url('/img/blog/blog5.jpg');
     background-size: cover;
     background-position: center;
@@ -124,11 +126,11 @@
     p{
         padding-left: 5px;
     }
-    .user {
-        display: flex;
-        a{
-            padding-left: 5px;
-            font-size: .9rem;
-        }
+}
+.blog__user {
+    display: flex;
+    a{
+        padding-left: 5px;
+        font-size: .9rem;
     }
 }

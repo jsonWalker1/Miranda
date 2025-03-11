@@ -6,59 +6,59 @@
     box-shadow: 0 2px 5px black;
     width: 100%;
     font-family: 'medium';
-    .logo {
+    .header__logo {
         @include logo();
     }
     @media (max-width:1600px) {
-        .search-bar{
+        .header__search-bar{
             width: auto;
         } 
-        .logo {     
+        .header__logo {     
             margin-left: 0;
         }
     }
-    .container {
+    .header__container {
         margin: 0 15%;
         display: flex;
         justify-content: space-between;
         align-items: center;
         padding: 10px 20px;
         min-height: 80px;
-    ul {
-        list-style: none;
-        display: flex;
-        gap: 35px;
+        ul {
+            list-style: none;
+            display: flex;
+            gap: 35px;
+        }
+        
+        a {
+            font-size: 14px;
+            color: black;
+            text-decoration: none;
+        }
     }
-    
-   a {
-        font-size: 14px;
-        color: black;
-        text-decoration: none;
-    }
-    
-    .search-bar {
+    .header__search-bar {
         display: flex;
         align-items: center;
         border-bottom: 2px solid black;
         padding-bottom: 5px;
         width: 290px;
+        input {
+                border: none;
+                outline: none;
+                flex: 1; 
+            }
     }
     @media (max-width:1600px) {
-        .search-bar{
+        .header__search-bar{
             display: none;
         }
-        .hamburger-menu{
+        .header__hamburger-menu{
             display: flex;
         }
     }
-    
-  input {
-        border: none;
-        outline: none;
-        flex: 1; 
-    }
-    
-    .user-nav {
+        
+        
+    .header__user-nav {
         display: flex;
         gap: 2rem;
         align-items: center;
@@ -68,34 +68,33 @@
         }
     }
     @media (max-width:1110px) {
-        .nav-bar {
+        .header__nav-bar {
             display: none;
         }
     }
-    }
-    .hamburger-menu {
+    .header__hamburger-menu {
         display: none;
         flex-direction: column; 
         cursor: pointer; 
         padding-left: 30px;
+        .line {
+            width: 40px; 
+            height: 3px; 
+            background-color: black; 
+            margin: 4px 0;
+            transition: all 0.3s; 
+        }
     }
 
-    .line {
-        width: 40px; 
-        height: 3px; 
-        background-color: black; 
-        margin: 4px 0;
-        transition: all 0.3s; 
-    }
     @media (max-width:1950px) {
-        .container{
+        .header__container{
             margin: 0;
         }
     }
     @media (max-width:700px) {
-        .logo{
+        .header__logo{
             margin: 0;
-           @include logo($width: 70px, $height: 50px)
+            @include logo($width: 70px, $height: 50px)
         }
     }
 }
